@@ -12,7 +12,7 @@
 - 🔭 I’m currently working on **AIDOC: Medical Knowledge Base** and **MentorLink**  
 - 🌱 I’m currently diving deeper into **AI, Machine Learning, and DevOps**  
 - 💬 Ask me about **MERN, Next.js, and AI-based Projects**  
-- 📫 Reach me at **gauravbhindwar@gmail.com**  
+- 📫 Reach me at **gaurav.12bhindwar@gmail.com**  
 - ⚡ Fun fact: **I love playing cricket and experimenting with new technologies!**
 
 ---
