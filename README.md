@@ -265,7 +265,7 @@ GenAI Engineer with hands-on experience building **production-ready AI systems**
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=gauravbhindwar&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" height="180" alt="GitHub Stats" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravbhindwar&layout=compact&theme=radical&hide_border=true&langs_count=8&include_all_commits=true&count_private=true" height="180" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravbhindwar&layout=compact&theme=radical&hide_border=true&langs_count=10&count_private=true&hide=HTML,CSS,SCSS,Jupyter%20Notebook&size_weight=0.5&count_weight=0.5" height="180" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -288,6 +288,11 @@ GenAI Engineer with hands-on experience building **production-ready AI systems**
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=gauravbhindwar&theme=radical" alt="Stats" />
   &nbsp;
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=gauravbhindwar&theme=radical&utcOffset=5.5" alt="Productive Time" />
+</p>
+
+<!-- Language stats generated from all repos (including private) via GitHub Actions -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/language-stats.svg" alt="Language Stats (All Repos)" />
 </p>
 
 <!-- Snake contribution graph -->

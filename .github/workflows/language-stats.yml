@@ -1,0 +1,184 @@
+name: Generate Language Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate language stats SVG
+        env:
+          # Use STATS_TOKEN (PAT with repo scope) if provided, else fall back to GITHUB_TOKEN
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USER: gauravbhindwar
+        run: |
+          python - <<'PYEOF'
+          import os, requests, math
+
+          token = os.environ["GH_TOKEN"]
+          user  = os.environ["GH_USER"]
+          headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+
+          # ── collect repos ──────────────────────────────────────────────────────
+          repos = []
+          # Try installation repos (works with GITHUB_TOKEN for all installed repos)
+          resp = requests.get("https://api.github.com/installation/repositories",
+                              headers=headers, params={"per_page": 100})
+          if resp.status_code == 200:
+              data = resp.json()
+              repos = data.get("repositories", [])
+              # paginate
+              while "next" in resp.links:
+                  resp = requests.get(resp.links["next"]["url"], headers=headers)
+                  repos.extend(resp.json().get("repositories", []))
+          else:
+              # Fall back to listing user repos (works with a PAT)
+              page = 1
+              while True:
+                  resp = requests.get("https://api.github.com/user/repos",
+                                      headers=headers,
+                                      params={"type": "owner", "visibility": "all",
+                                              "per_page": 100, "page": page})
+                  if resp.status_code != 200 or not resp.json():
+                      break
+                  batch = resp.json()
+                  repos.extend(batch)
+                  if len(batch) < 100:
+                      break
+                  page += 1
+
+          print(f"Found {len(repos)} repos")
+
+          # ── collect language bytes ─────────────────────────────────────────────
+          SKIP_LANGS = {"HTML", "CSS", "SCSS", "Markdown", "Makefile", "Dockerfile",
+                        "Shell", "Batchfile", "PowerShell", "Rich Text Format",
+                        "Jupyter Notebook"}
+          COLORS = {
+              "Python":           "#3572A5",
+              "JavaScript":       "#f1e05a",
+              "TypeScript":       "#3178C6",
+              "C++":              "#f34b7d",
+              "C":                "#555555",
+              "Java":             "#b07219",
+              "Go":               "#00ADD8",
+              "Rust":             "#dea584",
+              "Ruby":             "#701516",
+              "Kotlin":           "#A97BFF",
+              "Swift":            "#F05138",
+              "Dart":             "#00B4AB",
+              "Vue":              "#41b883",
+          }
+
+          lang_bytes = {}
+          for repo in repos:
+              if repo.get("fork"):
+                  continue
+              name = repo.get("full_name") or f"{user}/{repo['name']}"
+              r = requests.get(f"https://api.github.com/repos/{name}/languages", headers=headers)
+              if r.status_code == 200:
+                  for lang, b in r.json().items():
+                      if lang not in SKIP_LANGS:
+                          lang_bytes[lang] = lang_bytes.get(lang, 0) + b
+
+          if not lang_bytes:
+              print("No language data – skipping SVG generation")
+              raise SystemExit(0)
+
+          sorted_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:10]
+          total = sum(b for _, b in sorted_langs)
+          print("Top langs:", [(l, f"{b/1024:.0f}KB") for l, b in sorted_langs])
+
+          # ── build SVG ─────────────────────────────────────────────────────────
+          W = 495
+          PAD = 25
+          BAR_H = 10
+          ITEM_H = 26
+          COLS = 2
+          rows = math.ceil(len(sorted_langs) / COLS)
+          col_w = (W - 2 * PAD) // COLS
+          legend_top = PAD + 34 + BAR_H + 16
+          H = legend_top + rows * ITEM_H + PAD
+
+          bars, legend = [], []
+          x = PAD
+          for lang, b in sorted_langs:
+              pct = b / total
+              bw = pct * (W - 2 * PAD)
+              color = COLORS.get(lang, "#858585")
+              bars.append(
+                  f'<rect x="{x:.2f}" y="{PAD+34}" width="{bw:.2f}" '
+                  f'height="{BAR_H}" fill="{color}" rx="3"/>'
+              )
+              x += bw
+
+          for i, (lang, b) in enumerate(sorted_langs):
+              col = i % COLS
+              row = i // COLS
+              lx = PAD + col * col_w
+              ly = legend_top + row * ITEM_H
+              pct_str = f"{b/total*100:.1f}%"
+              color = COLORS.get(lang, "#858585")
+              legend.append(
+                  f'<circle cx="{lx+7}" cy="{ly+7}" r="7" fill="{color}"/>'
+                  f'<text x="{lx+20}" y="{ly+12}" fill="#9f9fa8" '
+                  f'font-family="\'Segoe UI\',Ubuntu,Sans-Serif" font-size="12">'
+                  f'{lang}</text>'
+                  f'<text x="{lx+col_w-PAD}" y="{ly+12}" fill="#e4e2e2" '
+                  f'font-family="\'Segoe UI\',Ubuntu,Sans-Serif" font-size="12" '
+                  f'text-anchor="end">{pct_str}</text>'
+              )
+
+          svg = f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="{W}" height="{H}" rx="10" fill="#141321"
+              stroke="#e4e2e2" stroke-opacity="0.1" stroke-width="1"/>
+            <text x="{W//2}" y="{PAD+16}" text-anchor="middle"
+              font-family="'Segoe UI',Ubuntu,Sans-Serif" font-weight="700"
+              font-size="16" fill="#fe428e">Most Used Languages</text>
+            {"".join(bars)}
+            {"".join(legend)}
+          </svg>"""
+
+          os.makedirs("dist", exist_ok=True)
+          with open("dist/language-stats.svg", "w") as f:
+              f.write(svg)
+          print("Written dist/language-stats.svg")
+          PYEOF
+
+      - name: Push language stats to output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git clone --single-branch --branch output \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" \
+            output-branch
+          cp dist/language-stats.svg output-branch/
+          cd output-branch
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add language-stats.svg
+          if git diff --staged --quiet; then
+            echo "No changes to language-stats.svg"
+          else
+            git commit -m "chore: update language statistics"
+            git push
+          fi
