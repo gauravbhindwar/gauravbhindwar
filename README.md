@@ -269,7 +269,7 @@ GenAI Engineer with hands-on experience building **production-ready AI systems**
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=gauravbhindwar&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=gauravbhindwar&theme=radical&hide_border=true&include_dates=true" alt="GitHub Streak" />
 </p>
 
 <p align="center">
