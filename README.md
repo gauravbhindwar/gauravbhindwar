@@ -44,6 +44,7 @@ GenAI Engineer with hands-on experience building **production-ready AI systems**
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
@@ -141,6 +142,68 @@ GenAI Engineer with hands-on experience building **production-ready AI systems**
       </ul>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌐 Orbis PM &nbsp;<img src="https://img.shields.io/badge/Private-grey?style=flat-square&logo=github&logoColor=white"/></h3>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+      </p>
+      <ul>
+        <li>Enterprise-grade project management platform with real-time collaboration</li>
+        <li>Role-based access control, sprint planning, and Kanban boards</li>
+        <li>FastAPI backend with WebSocket support for live updates</li>
+        <li>Deployed on GCP with Docker and CI/CD pipelines</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎨 Anima &nbsp;<img src="https://img.shields.io/badge/Private-grey?style=flat-square&logo=github&logoColor=white"/></h3>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+      </p>
+      <ul>
+        <li>AI-powered platform with generative capabilities and intelligent automation</li>
+        <li>Integrates LLMs for dynamic content generation and personalization</li>
+        <li>Full-stack architecture with real-time AI inference pipeline</li>
+        <li>Scalable microservices backend with event-driven processing</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧾 Invoicely – Billing System &nbsp;<img src="https://img.shields.io/badge/Private-grey?style=flat-square&logo=github&logoColor=white"/></h3>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Razorpay-02042B?style=flat-square&logo=razorpay&logoColor=white"/>
+      </p>
+      <ul>
+        <li>Full billing & invoicing system with secure authentication</li>
+        <li>Role-based dashboards, PDF export, and Razorpay payment integration</li>
+        <li>Automated deployment with Docker and GCP</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🏥 AIDOC – Medical Knowledge Base &nbsp;<img src="https://img.shields.io/badge/Private-grey?style=flat-square&logo=github&logoColor=white"/></h3>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
+        <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
+        <img src="https://img.shields.io/badge/VectorDB-FF6F00?style=flat-square&logo=databricks&logoColor=white"/>
+      </p>
+      <ul>
+        <li>AI-powered medical document scanner and knowledge base</li>
+        <li>RAG pipeline for context-aware medical Q&A responses</li>
+        <li>LangChain integration for intelligent document retrieval</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -202,15 +265,38 @@ GenAI Engineer with hands-on experience building **production-ready AI systems**
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=gauravbhindwar&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" height="180" alt="GitHub Stats" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravbhindwar&layout=compact&theme=radical&hide_border=true&langs_count=8" height="180" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravbhindwar&layout=compact&theme=radical&hide_border=true&langs_count=8&include_all_commits=true&count_private=true" height="180" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gauravbhindwar&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=gauravbhindwar&theme=radical&hide_border=true&include_dates=true" alt="GitHub Streak" />
 </p>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=gauravbhindwar&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
+</p>
+
+<!-- GitHub Profile Summary Cards -->
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gauravbhindwar&theme=radical" alt="Profile Summary" />
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gauravbhindwar&theme=radical" alt="Repos Per Language" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gauravbhindwar&theme=radical" alt="Most Commit Language" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=gauravbhindwar&theme=radical" alt="Stats" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=gauravbhindwar&theme=radical&utcOffset=5.5" alt="Productive Time" />
+</p>
+
+<!-- Snake contribution graph -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/github-snake.svg" />
+    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/github-snake.svg" />
+  </picture>
 </p>
 
 <!-- Footer wave -->
