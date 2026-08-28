@@ -1,262 +1,108 @@
-<!-- Custom hero banner: hash-chain motif from Turnstile's audit ledger -->
-<p align="center">
-  <img src="banner.svg" alt="Gaurav Kumar — Backend & GenAI Engineer" width="100%" />
-</p>
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F14"/>
+      <stop offset="100%" stop-color="#131A22"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00D9FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .display { font-family: 'Arial', sans-serif; font-weight: 800; }
+      .mono { font-family: 'Courier New', monospace; }
+      .body { font-family: 'Arial', sans-serif; }
+    </style>
+  </defs>
 
-<!-- Typing animation -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=false&width=700&lines=Building+Production-Ready+AI+Systems+%F0%9F%A4%96;RAG+Pipelines+%7C+Hybrid+Retrieval+%7C+Vector+DBs+%F0%9F%94%AE;Node.js+%7C+FastAPI+%7C+Redis+%7C+Docker+%F0%9F%9A%80;AI-Agent+Infrastructure+%7C+System+Design+%F0%9F%8C%90" alt="Typing SVG" />
-</p>
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
 
-<!-- Profile views + social badges -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=gauravbhindwar&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
-  &nbsp;
-  <a href="mailto:gaurav.12bhindwar@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  &nbsp;
-  <a href="https://linkedin.com/in/gauravbhindwar"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  &nbsp;
-  <a href="https://gauravbhindwar.dev"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  &nbsp;
-  <a href="https://github.com/gauravbhindwar"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-</p>
+  <!-- subtle grid texture -->
+  <g opacity="0.05">
+    <path d="M 0 80 H 1280 M 0 160 H 1280 M 0 240 H 1280 M 0 320 H 1280 M 0 400 H 1280 M 0 480 H 1280 M 0 560 H 1280" stroke="#00D9FF" stroke-width="1"/>
+    <path d="M 160 0 V 640 M 320 0 V 640 M 480 0 V 640 M 640 0 V 640 M 800 0 V 640 M 960 0 V 640 M 1120 0 V 640" stroke="#00D9FF" stroke-width="1"/>
+  </g>
 
----
+  <!-- eyebrow label -->
+  <text x="80" y="100" class="mono" font-size="16" fill="#00D9FF" letter-spacing="4">BACKEND · GENAI · AI INFRASTRUCTURE</text>
+  <rect x="80" y="116" width="420" height="2" fill="url(#cyanGlow)"/>
 
-## 🚀 About Me
+  <!-- Name -->
+  <text x="76" y="210" class="display" font-size="76" fill="#E8EDF2">Gaurav Kumar</text>
 
-<img align="right" alt="AI Coding" width="380" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" />
+  <!-- Subheadline -->
+  <text x="80" y="256" class="body" font-size="24" fill="#9BB0C2">Building production RAG systems and AI-agent infrastructure</text>
 
-Backend & GenAI Engineer building **production-ready AI systems** — RAG pipelines, hybrid retrieval, and scalable backend platforms. I like owning problems end to end: system design, API, database, deployment.
+  <!-- Hash-chain signature motif -->
+  <g transform="translate(80, 300)" filter="url(#softGlow)">
+    <!-- block 1 -->
+    <rect x="0" y="0" width="150" height="72" rx="10" fill="#151B23" stroke="#00D9FF" stroke-width="1.5"/>
+    <text x="16" y="26" class="mono" font-size="12" fill="#5B8A9E">BLOCK 0</text>
+    <text x="16" y="50" class="mono" font-size="13" fill="#00D9FF">a91f...3cd2</text>
 
-- 🔭 Currently a **Software Engineer Trainee (AI Automation)** at HCLTech, building AI-powered automation tools for a healthcare project
-- 🏗️ Built **Turnstile**, a self-hosted gateway for AI agents with a tamper-evident, cryptographically-verifiable audit ledger
-- 🌱 Deep in **hybrid retrieval, vector databases, and distributed systems**
-- 💬 Ask me about **RAG, hybrid retrieval, FastAPI, Node.js, system design**
-- 📫 **gaurav.12bhindwar@gmail.com** · 📞 +91 9006045930
+    <!-- chain link -->
+    <path d="M 150 36 L 190 36" stroke="#FFB86B" stroke-width="2.5"/>
+    <circle cx="170" cy="36" r="5" fill="#FFB86B"/>
 
-<br clear="right"/>
+    <!-- block 2 -->
+    <rect x="190" y="0" width="150" height="72" rx="10" fill="#151B23" stroke="#00D9FF" stroke-width="1.5"/>
+    <text x="206" y="26" class="mono" font-size="12" fill="#5B8A9E">BLOCK 1</text>
+    <text x="206" y="50" class="mono" font-size="13" fill="#00D9FF">7be0...91aa</text>
 
----
+    <!-- chain link -->
+    <path d="M 340 36 L 380 36" stroke="#FFB86B" stroke-width="2.5"/>
+    <circle cx="360" cy="36" r="5" fill="#FFB86B"/>
 
-## 🛠️ Tech Stack
+    <!-- block 3 -->
+    <rect x="380" y="0" width="150" height="72" rx="10" fill="#151B23" stroke="#00D9FF" stroke-width="1.5"/>
+    <text x="396" y="26" class="mono" font-size="12" fill="#5B8A9E">BLOCK 2</text>
+    <text x="396" y="50" class="mono" font-size="13" fill="#00D9FF">2f4c...e017</text>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
-</p>
+    <!-- chain link -->
+    <path d="M 530 36 L 570 36" stroke="#FFB86B" stroke-width="2.5"/>
+    <circle cx="550" cy="36" r="5" fill="#FFB86B"/>
 
----
+    <!-- signed checkpoint -->
+    <rect x="570" y="-6" width="168" height="84" rx="10" fill="#0F2A22" stroke="#5EE6A8" stroke-width="1.5"/>
+    <text x="586" y="20" class="mono" font-size="12" fill="#5EE6A8">CHECKPOINT</text>
+    <text x="586" y="44" class="mono" font-size="13" fill="#5EE6A8">Ed25519 signed</text>
+    <text x="586" y="62" class="mono" font-size="11" fill="#3E8F6E">verified checkpoint</text>
+  </g>
 
-## 💼 Experience
+  <!-- caption under motif -->
+  <text x="80" y="430" class="mono" font-size="14" fill="#5B6B78" letter-spacing="1">tamper-evident audit ledger — from Turnstile, a self-hosted AI-agent gateway</text>
 
-<table>
-  <tr>
-    <td><b>🏢 HCLTech</b> <i>— Chennai</i></td>
-    <td align="right"><b>Jul 2026 – Present</b></td>
-  </tr>
-</table>
+  <!-- stat strip -->
+  <g transform="translate(80, 480)">
+    <g>
+      <text x="0" y="0" class="display" font-size="30" fill="#E8EDF2">20,000+</text>
+      <text x="0" y="26" class="body" font-size="14" fill="#7C8FA0">PDF pages indexed</text>
+    </g>
+    <g transform="translate(260, 0)">
+      <text x="0" y="0" class="display" font-size="30" fill="#E8EDF2">Hybrid</text>
+      <text x="0" y="26" class="body" font-size="14" fill="#7C8FA0">FAISS + BM25 retrieval</text>
+    </g>
+    <g transform="translate(520, 0)">
+      <text x="0" y="0" class="display" font-size="30" fill="#E8EDF2">500+</text>
+      <text x="0" y="26" class="body" font-size="14" fill="#7C8FA0">users on MentorLink</text>
+    </g>
+    <g transform="translate(780, 0)">
+      <text x="0" y="0" class="display" font-size="30" fill="#E8EDF2">Solo</text>
+      <text x="0" y="26" class="body" font-size="14" fill="#7C8FA0">built, Turnstile gateway</text>
+    </g>
+  </g>
 
-- Software Engineer Trainee, System of Systems — AI Automation
-- Developing AI-powered automation tools in Python for a healthcare project
-
-<table>
-  <tr>
-    <td><b>🏢 Simplify Consulting (India) Pvt. Ltd.</b> <i>— Chandigarh</i></td>
-    <td align="right"><b>Dec 2025 – Jun 2026</b></td>
-  </tr>
-</table>
-
-- Built AI-driven enterprise platforms end to end, from system design through deployment
-- Developed backend services with REST APIs, RBAC, and integrated GenAI features
-- Designed real-time data pipelines using NATS and Redis, replacing polling-based flows
-- Containerized services with Docker and managed cloud deployment, including CI/CD
-
-<table>
-  <tr>
-    <td><b>🏢 AGILITYAI Private Limited</b> <i>— Remote</i></td>
-    <td align="right"><b>Jul 2025 – Sep 2025</b></td>
-  </tr>
-</table>
-
-- Built and shipped three production SaaS products, including **Invoicely** (billing system)
-- Implemented secure auth, role-based dashboards, PDF export, and Razorpay integration
-- Migrated backend services from Flask to Node.js microservices
-
-<table>
-  <tr>
-    <td><b>🏢 Software Development Center, Manipal University Jaipur</b> <i>— Jaipur</i></td>
-    <td align="right"><b>Jan 2025 – Jun 2025</b></td>
-  </tr>
-</table>
-
-- Led development of **MentorLink**, a full-stack mentorship platform (MERN + Next.js) serving **500+ users**
-- Implemented secure RESTful APIs with JWT authentication and multi-role access control
-- 🥈 2nd Rank, International Project Expo, Manipal University Jaipur
-
----
-
-## 📂 Featured Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🔒 Turnstile — Gateway for AI Agents</h3>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
-        <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-      </p>
-      <ul>
-        <li>Self-hosted gateway enforcing spend caps, allowlists, and human-approval policies for AI agents</li>
-        <li>Tamper-evident audit ledger: SHA-256 hash chain with Ed25519-signed checkpoints</li>
-        <li>OpenAI-compatible proxy adapter + encrypted credential vault (AES-256-GCM)</li>
-        <li>Admin API and live dashboard (SSE) for agent activity, budgets, and events</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🧠 Multimodal RAG — Document Intelligence</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
-        <img src="https://img.shields.io/badge/FAISS-00A0DC?style=flat-square"/>
-        <img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white"/>
-      </p>
-      <ul>
-        <li>Processes 20,000+ pages of PDF content spanning text and images</li>
-        <li>Hybrid retrieval: FAISS dense search + BM25 sparse ranking</li>
-        <li>Dual-mode response generation — text and image outputs from one query</li>
-        <li>Deployed on Google Cloud Run for elastic, scale-to-zero infra</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌐 OrbisPM — Multi-Tenant SaaS</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white"/>
-        <img src="https://img.shields.io/badge/NATS-27AAE1?style=flat-square"/>
-      </p>
-      <ul>
-        <li>Multi-tenant project management SaaS with role-based access control</li>
-        <li>Real-time collaboration and event-driven notifications via NATS</li>
-        <li>Approval workflows, task tracking, offline-first behavior</li>
-        <li>Infra: PostgreSQL, MinIO, Zitadel, Kong, Docker</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🎓 MentorLink — Mentorship Platform &nbsp;<a href="https://mentorlink-nu.vercel.app"><img src="https://img.shields.io/badge/Live-brightgreen?style=flat-square&logo=vercel"/></a></h3>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
-      </p>
-      <ul>
-        <li>Full-stack mentorship platform with RBAC for students, mentors, admins</li>
-        <li>Serving 500+ active users across roles</li>
-        <li>JWT auth, multi-role access, optimized query performance</li>
-        <li>🥈 2nd Rank, International Project Expo</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <sub><b>🧾 Invoicely</b> — full billing system with secure auth, role-based dashboards, PDF export, Razorpay integration (Next.js, Node.js, MongoDB)</sub>
-</p>
-
----
-
-## 🏆 Achievements & Awards
-
-- 🥈 **2nd Rank** – International Project Expo, MentorLink @ Manipal University Jaipur (2025)
-- ⭐ **Star Performer** – Software Development Center (SDC MUJ)
-
----
-
-## 🎓 Education
-
-| Degree | Institution | Year | Score |
-|--------|------------|------|-------|
-| 🎓 B.Tech – CSE | Manipal University Jaipur | Expected 2026 | GPA: 8.19 |
-| 📚 Intermediate (PCM) | Govt. +2 High School, Supaul | Apr 2021 | 75.4% |
-
----
-
-## 📜 Certifications
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Full%20Stack%20Web%20Developer-Udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/CCNA%20Enterprise%20Networking%20%26%20Security-Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" />
-</p>
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gauravbhindwar&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" height="180" alt="GitHub Stats" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gauravbhindwar&layout=compact&theme=radical&hide_border=true&langs_count=10&count_private=true&hide=HTML,CSS,SCSS,Jupyter%20Notebook&size_weight=0.5&count_weight=0.5" height="180" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=gauravbhindwar&theme=radical&hide_border=true&include_dates=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gauravbhindwar&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gauravbhindwar&theme=radical" alt="Profile Summary" />
-</p>
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gauravbhindwar&theme=radical" alt="Repos Per Language" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gauravbhindwar&theme=radical" alt="Most Commit Language" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=gauravbhindwar&theme=radical" alt="Stats" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=gauravbhindwar&theme=radical&utcOffset=5.5" alt="Productive Time" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/language-stats.svg" alt="Language Stats (All Repos)" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/github-snake.svg" />
-    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/gauravbhindwar/gauravbhindwar/output/github-snake.svg" />
-  </picture>
-</p>
-
-<!-- Footer wave -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
-</p>
+  <!-- footer -->
+  <rect x="0" y="600" width="1280" height="1" fill="#1E2731"/>
+  <text x="80" y="628" class="mono" font-size="14" fill="#5B6B78">github.com/gauravbhindwar</text>
+  <text x="1200" y="628" class="mono" font-size="14" fill="#5B6B78" text-anchor="end">gauravbhindwar.dev</text>
+</svg>
