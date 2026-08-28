@@ -1,6 +1,6 @@
-<!-- Banner -->
+<!-- Custom hero banner: hash-chain motif from Turnstile's audit ledger -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Gaurav%20Kumar&fontSize=60&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Backend%20%26%20GenAI%20Engineer%20%7C%20RAG%20Systems%20%7C%20AI%20Infrastructure&descAlignY=58&descSize=18" />
+  <img src="banner.svg" alt="Gaurav Kumar — Backend & GenAI Engineer" width="100%" />
 </p>
 
 <!-- Typing animation -->
